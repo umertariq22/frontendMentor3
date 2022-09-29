@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background: hsl(27, 66%, 92%);
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.top-banner{
+  background: hsl(10, 79%, 65%);
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-banner p,.top-banner h1{
+  color: white;
+  margin: 0;
+}
+
+.top-banner h1{
+  font-size: 1.8em;
+}
+
+.main{
+  background: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.graph-container h2{
+  margin: 0;
+  margin-bottom: 50px;
+}
+.graph{
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  gap:10px;
+}
+
+.bar-element{
+  width: 3.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+}
+.bar{
+  background: hsl(10, 79%, 65%);
+  border: none;
+  border-radius: 5px;
+}
+
+.bar-text{
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+#highest{
+  background: hsl(186, 34%, 60%);
+}
+.row-divider{
+  border: 0.5px solid hsl(27, 66%, 92%);
+  margin-top: 30px;
+}
+.total-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.total-div h1,.total-div p{
+  margin: 0;
+}
+
+.total-div p{
+  font-size: 14px;
+}
+.right-align{
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.tooltip{
+  background: hsl(25, 47%, 15%);
+  color: white;
+  padding-block: 5px;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.bar-element:hover .tooltip{
+  display: block;
+}
+
+
+@media only screen and (max-width:400px)  {
+  .bar-element{
+    width: 2em;
+  }
+  .graph{
+    gap:5px;
+  }
+  .tooltip{
+    padding: 2px;
+    font-size: 12px;
+  }
+}
